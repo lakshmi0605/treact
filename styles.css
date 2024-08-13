@@ -5,7 +5,7 @@
     line-height:1.25em;
     letter-spacing: 0.025rem;
     font-family: 'Inter', sans-serif;
-    /* border: 1px solid red; Temporary border for debugging */
+    border: 1px solid red; //Temporary border for debugging
 }
   
 
@@ -26,16 +26,21 @@ img{
 }
 
 .image{
-    width:90%;
+    width:100%;
     height:100%;
     object-fit:cover;
 }
 
 
+#header, #intro, #features, #details, #steps, #values, #pricing, #testimonials, #faqs{
+    margin-left:3rem;
+    margin-right:3rem;
+}
+
 #details, #steps, #values, #testimonials{
     display:flex;
     align-items:center;
-    margin:10rem auto 0 auto;
+    margin-top:10rem;
 }
 
 .heading{
@@ -52,7 +57,7 @@ img{
 
 .side-heading{
     font-weight:700;
-    font-size:42px;
+    font-size:3rem;
     margin-bottom:1.2rem;
     flex:1;
     max-width:32rem;
@@ -367,7 +372,6 @@ img{
     display:flex;
     justify-content:center;
     align-items:center;
-    padding:0 3rem;
 }
 
 
@@ -388,11 +392,12 @@ img{
 .steps__imageContainer{
     width:50%;
     display:flex;
-    padding:0 3rem;
+    padding-left:3rem;
 }
 
 .steps__info{
     width:50%;
+    padding-left:7rem;
 }
 
 .steps__list--item{
@@ -401,11 +406,8 @@ img{
     margin:5% 0;
 }
 
-.step-description{
-    width:80%
-}
 .steps__list--number{
-    width:10%;
+    width:15%;
 }
 
 .steps__list--bullet{
@@ -417,6 +419,7 @@ img{
 }
 
 .steps__list--info{
+    width:60%;
     padding-left:5%;
 }
 
@@ -760,10 +763,11 @@ img{
 .footer__links{
     display:flex;
     flex-wrap:wrap;
+    justify-content:space-between;
 }
 
 .footer__links--main{
-    width:calc(100%/5);
+    width:calc(100%/5 - 3rem);
     display:flex;
     flex-direction:column;
     justify-content:space-between;
@@ -845,7 +849,9 @@ span{
         display:none;
     } */
 
-    
+    .steps__info{
+        padding-left:5rem;
+    }
     
     #header{
         margin:0;
@@ -1112,6 +1118,7 @@ span{
 
     .footer__links{
         flex-wrap:wrap;
+        justify-content:flex-start;
     }
 
     .footer__copyright{
